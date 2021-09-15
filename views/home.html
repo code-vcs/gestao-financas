@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME |</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <div class="barra-super">
+        <p style="color:white;font-size:10pt;">Sistema finançeiro 1.0.1</p>
+    </div>
+    <div class="home">
+        <img src="../img/ico.png" alt=""><span class="logo">Shark Finanças</span>
+        <img src="../img/shark.png" width="150">
+    </div>
+
+
+    <div class="container-progress">
+        <div class="progress">
+            <div class="bar">
+
+            </div>
+        </div>
+    </div>
+    <iframe src="" name="frm" frameborder="0"></iframe>
+
+    <span class="fa fa-power-off fa-2x" title="Desligar o sistema"></span>
+
+
+    <footer>
+        <h5 style="font-size: 10pt;color: rgb(0, 0, 0);text-align: end;">Contato: ( 11 ) - 97071-3261
+            &nbsp;&nbsp;&nbsp;&nbsp;E-mail: dimir.vcs@gmail.com&nbsp;&nbsp;&nbsp;&nbsp; </h5>
+    </footer>
+
+
+
+
+    <script>
+
+        let verificarConexao = window.navigator.onLine
+        if (verificarConexao == true) {
+            // alert("Status de Conexão \n\nOK..")
+            setTimeout(() => {
+                let frm = document.getElementsByTagName('iframe');
+                document.querySelector('.barra-super').style = "display:none;"
+                document.querySelector(".container-progress").style = "display:none;"
+                document.querySelector(".home").style = "display:none;"
+                document.body.style = "background:white;"
+                frm[0].src = ('../index.html')
+                frm[0].style = "display:block;"
+            }, 11000);
+
+            document.querySelector('.fa-power-off').addEventListener('click', () => {
+                close()
+            })
+        } else {
+            setTimeout(() => {
+                alert("Desligando sistema você está sem conexão !")
+                close()
+            }, 1300);
+
+        }
+
+
+
+    </script>
+
+
+
+
+    <script src="https://use.fontawesome.com/9b221fd506.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>

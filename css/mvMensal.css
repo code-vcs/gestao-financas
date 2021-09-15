@@ -1,0 +1,70 @@
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.barra-super{
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(+20deg,rgb(32, 79, 100),rgb(60, 121, 172),rgb(156, 200, 230));
+    -webkit-app-region:drag;
+}
+legend{
+    color: grey;
+}
+fieldset{
+  
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 0px;
+    border:1px solid rgba(211, 211, 211, 0);
+    border-top: 1px solid grey;
+}
+select{
+    outline: none;
+    text-align: center;
+    background: rgb(140, 177, 189);
+    width: 300px;
+    height: 40px;
+    margin-right: 15px;
+}
+select:hover{
+    color: rgb(255, 255, 255);
+}
+option[value]:hover{
+    color: red;
+}
+div.historico-mes{
+    width: 100%;
+    height: 450px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+.recebeTextMes{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: end;
+    color: rgb(97, 150, 175);
+}
+
+/* table{
+
+} */
+table tr th{
+    font-weight: bolder;
+    margin: 20px;
+    width: 290px;
+    text-align: center;
+    border: 1px solid rgb(114, 151, 185);
+    margin: 20px;
+    background: lightgrey;
+}
+td{
+    text-align: center;
+    font-weight: normal;
+    font-size: 10pt;
+    border: 1px solid rgb(114, 151, 185);
+}

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(230, 230, 230);
+
+}
+
+.barra-super{
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(+20deg,rgb(32, 79, 100),rgb(60, 121, 172),rgb(156, 200, 230));
+    -webkit-app-region:drag;
+}
+
+iframe{
+    display: none;
+    width: 100%;
+    height: 55vmax;
+    background:rgb(255, 255, 255);
+}
+
+.logo{
+    font-size: 30pt;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-shadow: 1px 2px 3px rgb(9, 140, 201);
+    margin-left: 25px;
+}
+
+span.fa-power-off{
+    position: absolute;
+    font-size: 30pt;
+    color: rgb(158, 158, 158);
+    margin-top: -600px;
+    margin-left: 1140px;
+}
+span.fa-power-off:hover{
+    color: rgb(255, 0, 0);
+}
+div.container-progress{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    /* margin-top: 600px; */
+    background: rgba(27, 27, 27, 0.164);
+}
+
+div.progress{
+    /* position: absolute; */
+    width: 98%;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background: rgba(26, 26, 26, 0.356);
+}
+
+div.bar{
+    position: absolute;
+    animation: 12s barra ease infinite;
+    text-align: start;
+    width: 0px;
+    height: 20px;
+    margin: 0 auto;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: red;
+    /* border-bottom: 5px solid rgb(0, 0, 0); */
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    background: linear-gradient(+20deg,rgb(32, 79, 100),rgb(60, 121, 172),rgb(156, 200, 230));
+    -webkit-app-region:drag;
+}
+
+
+
+@keyframes barra{
+    0%{transition: 5s;width: 10px;text-align: start;box-sizing: 20px;box-shadow: 1px 2px 5px rgb(51, 51, 51);background: rgb(180, 0, 0);opacity: 1;}
+    30%{transition: 8s;width: 300px;text-align: start;box-sizing: 20px;box-shadow: 1px 2px 5px rgb(43, 43, 43);background: rgb(0, 116, 170);opacity: 1.5;}
+    50%{transition: 6s;width: 500px;text-align: start;box-sizing: 20px;box-shadow: 1px 2px 5px rgb(43, 43, 43);background: rgb(4, 115, 219);opacity: 1;}
+    70%{transition: 7s;width: 80%;box-sizing: 20px;box-shadow: 1px 2px 5px rgb(80, 80, 80);background: rgb(0, 163, 82);opacity: 1;}
+    90%{transition: 8s;width: 95%;box-sizing: 20px;box-shadow: 1px 2px 5px rgb(53, 53, 53);border-bottom: 5px solid rgba(0, 204, 255, 0.411);;background: rgb(1, 136, 7);opacity: 1;}
+    100%{transition: 2s;width: 97%;box-sizing: 20px;box-shadow: 1px 2px 5px rgb(78, 78, 78);background: rgb(0, 131, 7);opacity: 1;}
+    120%{transition: 12s;width: 97%;box-sizing: 20px;box-shadow: 1px 2px 5px rgb(75, 75, 75);background: rgb(0, 131, 7);opacity: 1;}
+}

@@ -1,0 +1,84 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: transparent;
+    overflow: hidden;
+    background: rgb(59, 59, 59);
+}
+p{
+    font-size: 10pt;
+    color: white;
+    margin-bottom: 10px;
+    -webkit-app-region:drag;
+    
+}
+section{
+    width: 253px;
+    height:auto;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    /* border-radius: 10px; */
+    background-color: rgb(53, 53, 53);
+}
+
+#resultado{
+    font-size: 20pt;
+    font-weight: normal;
+    text-shadow: 1px 2px 2px rgb(32, 32, 32);
+    width: 98%;
+    height: 90px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: end;
+    padding-right: 5px;
+}
+hr{
+    height: 0px;
+    border: 1px solid rgb(43, 43, 43);
+}
+#divisor{
+    margin-left: 0px;
+}
+.fechar{
+    font-size: 15pt;
+    width: 115px;
+    height: 50px;
+    background: rgb(238, 88, 0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+section input{
+    font-size: 18pt;
+    color: rgb(0, 46, 10);
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(161, 161, 161);
+    box-shadow: 1px 2px 3px black;
+}
+section input:hover{
+    background-color: grey;
+    color: rgb(123, 255, 0);
+}
+
+
+/* audio */
+audio{
+    display: none;
+    width: 0px;
+    height: 0px;
+    /* opacity: 0; */
+}

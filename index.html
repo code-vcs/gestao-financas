@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financas | </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="barra-super">
+        <p style="color:white;font-size:10pt;">Sistema finaçeiro 1.0.1</p>
+    </div>
+    <header>
+        <h4 class="fa fa-refresh fa-spin fa-2x fa-fw" aria-hidden="true"></h4><span class="textLogo">Finanças</span>
+    </header>
+    <br>
+    <div class="container-ferramenta">
+        <div class="controler-sistem">
+            <button onclick="cotacao()">Cotação</button>
+            <button onclick="calculadora()">Calculadora</button>
+            <button onclick="mvMensal()">MV Mensal</button>
+            <button onclick="formatar()">Formatar Sistema</button>
+        </div>
+        <div class="status-movimento">
+            <div class="container-status">
+                <label>Entrada</label><input type="button" id="movimento-entrada" value="0">
+                <label>Saida</label><input type="button" id="movimento-saida" value="0">
+            </div>
+        </div>
+
+        <section>
+
+            <p class="data" style="font-size: 10pt;font-family: monospace;"></p>
+            <p class="hora" style="font-size: 10pt;font-family: monospace;"></p>
+            <p style="font-size: 11pt;font-family: monospace;">Saldo Atual</p>
+            <input type="button" id="saldo" value="" class="btn btn-primary">
+            <br><br>
+            <p style="font-size: 11pt;font-family: monospace;">Entrada</p>
+            <input type="number" id="entrada" min="1" placeholder="Valor de entrada"><span class="btn btn-success"
+                id="btAdicionar">+</span>
+            <br><br>
+            <p style="font-size: 11pt;font-family: monospace;">Saida</p>
+            <div>
+                <span
+                    style="font-size: 11pt;font-family: monospace;">Despesa</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select
+                    name="tipo-gasto" id="tipo-gasto">
+                    <optgroup label="Tipo de Gasto">
+                        <option value=""></option>
+                        <option value="agua">Agua</option>
+                        <option value="luz">Luz</option>
+                        <option value="mercado">Mercado</option>
+                        <option value="farmacia">Farmacia</option>
+                        <option value="banco">Banco</option>
+                        <option value="iptu">IPTU</option>
+                        <option value="ipva">IPVA</option>
+                        <option value="condominio">Condominio</option>
+                        <option value="seguro-carro">Seguro do carro</option>
+                        <option value="seguro-residencia">Seguro da residencia</option>'X 231R32C32'
+                        <option value="plano-medico">Plano medico</option>
+                        <option value="plano-odontologico">Plano odontologico</option>
+                        <option value="escola">Escola</option>
+                        <option value="faculdade">Faculdade</option>
+                        <option value="outros">Outros</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <input type="number" id="saida" min="1" placeholder="Valor de saida" disabled=true><span
+                    class="btn btn-danger" id="btSaida" hidden>-</span>
+            </div>
+          
+            <div class="container-historico">
+                <button class="btOcultar" title="Ocultar Movimentação">X</button>
+                <h6
+                    style="text-align:center;font-size: 10pt;text-transform: uppercase;text-decoration:underline;color: rgb(75, 75, 75);">
+                    Movimentação</h6>
+                <div class="historico">
+
+                </div>
+                <br>
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+
+
+
+    <!-- <footer>
+        <div class="container-info">
+            <p>data</p>
+        </div>
+    </footer> -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <script src="https://use.fontawesome.com/9b221fd506.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="src/script.js" type="text/javascript"></script>
+
+</body>
+
+</html>

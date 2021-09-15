@@ -1,0 +1,37 @@
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background:white;
+}
+
+.barra-super{
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(+20deg,rgb(32, 79, 100),rgb(60, 121, 172),rgb(156, 200, 230));
+    -webkit-app-region:drag;
+}
+.fa-arrow-left{
+    width: 20px;
+    border: none;
+    color: rgb(255, 0, 0);
+    background: transparent;
+}
+.fa-arrow-left:hover{
+    color: rgb(179, 3, 3);
+}
+
+
+
+iframe{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    background: rgb(255, 255, 255);
+}
